@@ -1,1 +1,3 @@
 Quiz game of state & capital within time limit 
+Move dataset file to workspace & then run following command
+Run comand :- go run quizgame.go -csv="state and capital.csv"
