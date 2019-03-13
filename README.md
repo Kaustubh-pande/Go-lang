@@ -1,2 +1,2 @@
 # Go-lang
-Hackerrank Algorithm &amp; other stuff
+Hackerrank Algorithm solution & other cool stuff
