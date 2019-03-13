@@ -1,2 +1,2 @@
 # Go-lang
-Hackerrank Algorithm solution & other cool stuff
+Hackerrank Algorithms problems solutions & other cool stuff
