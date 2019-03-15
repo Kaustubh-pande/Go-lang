@@ -7,6 +7,8 @@ import (
 	"os"
 	"strings"
 	"time"
+
+	"github.com/fatih/color"
 )
 
 func main() {
@@ -16,7 +18,6 @@ func main() {
 	file, err := os.Open(*csvfilename)
 	if err != nil {
 		exit(fmt.Sprintf("Failed to open a file: %s ", *csvfilename))
-
 	}
 	r := csv.NewReader(file)
 	lines, err := r.ReadAll()
@@ -45,7 +46,13 @@ problemloop:
 
 			if strings.ToLower(ans) == q.capital {
 				correct++
-				fmt.Println("correct!")
+				color.Green("correct! :) ")
+
+			} else if strings.ToLower(ans) == "" {
+				color.Red("Blank :| ahhh
+				 you dont't know ")
+			} else {
+				color.Red("Incorrect :( ")
 			}
 		}
 
