@@ -1,3 +1,13 @@
 Quiz game of state & capital within time limit 
+
+=============================================================
+
+Run the following command for downloading the color package
+command:- go get github.com/fatih/color
+
+=============================================================
+
 Move dataset file to workspace & then run following command
 Run comand :- go run quizgame.go -csv="state and capital.csv"
+
+=============================================================
