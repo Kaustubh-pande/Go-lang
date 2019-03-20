@@ -1,0 +1,12 @@
+first time we need to get mongo drivers in our $gopath package directory
+use following cmds
+go get "github.com/gorilla/mux"
+go get "go.mongodb.org/mongo-driver/mongo@~1.0.0"
+or
+dep ensure -add "go.mongodb.org/mongo-driver/mongo@~1.0.0"
+if in your machine not having proper packages then you need to install it first
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.connect to mongodb database 
+2.Start mongodb server with cmd mongod
+3.After starting mongodb server run main program file 
+4.send request through postman 
