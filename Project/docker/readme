@@ -1,0 +1,5 @@
+Currently working on mongodb & web server run on docker 
+for me :-
+  1.create docker compose file for server and mongodb server
+  2.link with the dockerfile & create a docker image
+  
