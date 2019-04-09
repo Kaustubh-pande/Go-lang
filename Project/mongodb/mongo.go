@@ -26,7 +26,7 @@ type Quotes struct {
 	Quote  string             `json:"quote,omitempty" bson:"quote,omitempty"`
 	Author string             `json:"author,omitempty" bson:"author,omitempty"`
 }
-
+//post api
 func CreateQuote(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("content-type", "application/json")
 	var quotes Quotes
@@ -36,7 +36,7 @@ func CreateQuote(response http.ResponseWriter, request *http.Request) {
 	result, _ := collection.InsertOne(ctx, quotes)
 	json.NewEncoder(response).Encode(result)
 }
-
+//get 
 func GetQuote(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("content-type", "application/json")
 	params := mux.Vars(request)
@@ -52,7 +52,7 @@ func GetQuote(response http.ResponseWriter, request *http.Request) {
 	}
 	json.NewEncoder(response).Encode(quotes)
 }
-
+//get aaray
 func GetQuotearr(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("content-type", "application/json")
 	var Quotesarr []Quotes
